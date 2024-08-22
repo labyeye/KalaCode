@@ -2,20 +2,20 @@
 <!-- This site was created in Webflow. https://webflow.com --><!-- Last Published: Wed Jul 03 2024 12:57:23 GMT+0000 (Coordinated Universal Time) -->
 <html
   data-wf-domain="divento-agency-webflow-template.webflow.io"
-  data-wf-page="667d12c4e9ccd7c563b9307c"
+  data-wf-page="667d12c4e9ccd7c563b930c8"
   data-wf-site="667d12c4e9ccd7c563b93076"
   data-wf-status="1"
   lang="en"
 >
   <head>
     <meta charset="utf-8" />
-    <title>Showcase - Divento - Webflow Ecommerce Website Template</title>
+    <title>Home Page 02 - Divento - Webflow Ecommerce Website Template</title>
     <meta
       content='"Divento: A versatile and modern agency template designed for creative professionals, showcasing services and portfolios with style and efficiency."'
       name="description"
     />
     <meta
-      content="Showcase - Divento - Webflow Ecommerce Website Template"
+      content="Home Page 02 - Divento - Webflow Ecommerce Website Template"
       property="og:title"
     />
     <meta
@@ -23,7 +23,7 @@
       property="og:description"
     />
     <meta
-      content="Showcase - Divento - Webflow Ecommerce Website Template"
+      content="Home Page 02 - Divento - Webflow Ecommerce Website Template"
       property="twitter:title"
     />
     <meta
@@ -85,7 +85,7 @@
     </script>
   </head>
   <body>
-    <section class="nav-shadow">
+    <section class="nav-sec">
       <div
         data-animation="default"
         data-collapse="medium"
@@ -97,12 +97,9 @@
       >
         <div class="container-regular-2">
           <div class="navbar-wrapper">
-            <a
-              href="/"
-              aria-current="page"
-              class="navbar-brand-2 w-nav-brand w--current"
+            <a href="#" class="navbar-brand-2 w-nav-brand"
               ><img
-                src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930a9_Group%205.svg"
+                src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930dd_Group%205.svg"
                 loading="lazy"
                 alt=""
             /></a>
@@ -120,7 +117,7 @@
                 >
                   <div class="dropdown-toggle-2 w-dropdown-toggle">
                     <div class="icon-7 _01 w-icon-dropdown-toggle"></div>
-                    <div class="nav-text">Landings</div>
+                    <div class="nav-text _02">Landings</div>
                   </div>
                   <nav class="dropdown-list-6 w-dropdown-list">
                     <div class="horizontal-dropdown-fixed-width-2">
@@ -128,7 +125,10 @@
                         ><div class="dropdown-link-box-2">
                           <div class="nav-menu-link-2">Homepage 01</div>
                         </div></a
-                      ><a href="/homepage-02" class="home-link-2 w-inline-block"
+                      ><a
+                        href="/homepage-02"
+                        aria-current="page"
+                        class="home-link-2 w-inline-block w--current"
                         ><div class="dropdown-link-box-2">
                           <div class="nav-menu-link-2">Homepage 02</div>
                         </div></a
@@ -147,7 +147,7 @@
                 >
                   <div class="dropdown-toggle-2 w-dropdown-toggle">
                     <div class="icon-7 _02 w-icon-dropdown-toggle"></div>
-                    <div class="nav-text">Pricing</div>
+                    <div class="nav-text _02">Pricing</div>
                   </div>
                   <nav class="dropdown-list-6 w-dropdown-list">
                     <div class="horizontal-dropdown-fixed-width-2">
@@ -180,7 +180,7 @@
                 >
                   <div class="dropdown-toggle-2 w-dropdown-toggle">
                     <div class="icon-7 _03 w-icon-dropdown-toggle"></div>
-                    <div class="nav-text">Blog</div>
+                    <div class="nav-text _02">Blog</div>
                   </div>
                   <nav class="dropdown-list-6 w-dropdown-list">
                     <div class="horizontal-dropdown-fixed-width-2">
@@ -196,12 +196,6 @@
                         ><div class="dropdown-link-box-2">
                           <div class="nav-menu-link-2">Blog 03</div>
                         </div></a
-                      ><a
-                        href="https://divento-agency-webflow-template.webflow.io/vlog-post/video-marketing-tips-creating-engaging-content"
-                        class="home-link-2 w-inline-block"
-                        ><div class="dropdown-link-box-2">
-                          <div class="nav-menu-link-2">Blog single</div>
-                        </div></a
                       >
                     </div>
                   </nav>
@@ -213,7 +207,7 @@
                 >
                   <div class="dropdown-toggle-2 w-dropdown-toggle">
                     <div class="icon-7 _03 w-icon-dropdown-toggle"></div>
-                    <div class="nav-text">Project</div>
+                    <div class="nav-text _02">Project</div>
                   </div>
                   <nav class="dropdown-list-6 w-dropdown-list">
                     <div class="horizontal-dropdown-fixed-width-2">
@@ -240,7 +234,7 @@
                 >
                   <div class="dropdown-toggle-2 w-dropdown-toggle">
                     <div class="icon-7 w-icon-dropdown-toggle"></div>
-                    <div class="nav-text">Contact</div>
+                    <div class="nav-text _02">Contact</div>
                   </div>
                   <nav class="dropdown-list-6 w-dropdown-list">
                     <div class="horizontal-dropdown-fixed-width-2">
@@ -272,127 +266,127 @@
               </div>
             </nav>
             <div class="nav-right-wrapper">
-              <div class="nav-right-wrapper">
+              <div class="nav-right _02">
                 <div
                   data-open-product=""
                   data-wf-cart-type="modal"
                   data-wf-cart-query="query Dynamo2 {
-    database {
+  database {
+    id
+    commerceOrder {
+      comment
+      extraItems {
+        name
+        pluginId
+        pluginName
+        price {
+          value
+          unit
+          decimalValue
+          string
+        }
+      }
       id
-      commerceOrder {
-        comment
-        extraItems {
-          name
-          pluginId
-          pluginName
-          price {
-            value
-            unit
-            decimalValue
-            string
-          }
-        }
+      startedOn
+      statusFlags {
+        hasDownloads
+        hasSubscription
+        isFreeOrder
+        requiresShipping
+      }
+      subtotal {
+        value
+        unit
+        decimalValue
+        string
+      }
+      total {
+        value
+        unit
+        decimalValue
+        string
+      }
+      updatedOn
+      userItems {
+        count
         id
-        startedOn
-        statusFlags {
-          hasDownloads
-          hasSubscription
-          isFreeOrder
-          requiresShipping
-        }
-        subtotal {
-          value
-          unit
-          decimalValue
-          string
-        }
-        total {
-          value
-          unit
-          decimalValue
-          string
-        }
-        updatedOn
-        userItems {
-          count
+        product {
           id
-          product {
+          cmsLocaleId
+          f__draft_0ht
+          f__archived_0ht
+          f_name_
+          f_sku_properties_3dr {
             id
-            cmsLocaleId
-            f__draft_0ht
-            f__archived_0ht
-            f_name_
-            f_sku_properties_3dr {
+            name
+            enum {
               id
               name
-              enum {
-                id
-                name
-                slug
-              }
+              slug
             }
           }
-          rowTotal {
-            value
-            unit
-            decimalValue
-            string
-          }
-          sku {
-            cmsLocaleId
-            f__draft_0ht
-            f__archived_0ht
-            f_main_image_4dr {
-              url
-              file {
-                size
+        }
+        rowTotal {
+          value
+          unit
+          decimalValue
+          string
+        }
+        sku {
+          cmsLocaleId
+          f__draft_0ht
+          f__archived_0ht
+          f_main_image_4dr {
+            url
+            file {
+              size
+              origFileName
+              createdOn
+              updatedOn
+              mimeType
+              width
+              height
+              variants {
                 origFileName
-                createdOn
-                updatedOn
-                mimeType
-                width
+                quality
                 height
-                variants {
-                  origFileName
-                  quality
-                  height
-                  width
-                  s3Url
-                  error
-                  size
-                }
-              }
-              alt
-            }
-            f_sku_values_3dr {
-              property {
-                id
-              }
-              value {
-                id
+                width
+                s3Url
+                error
+                size
               }
             }
-            id
+            alt
           }
-          subscriptionFrequency
-          subscriptionInterval
-          subscriptionTrial
+          f_sku_values_3dr {
+            property {
+              id
+            }
+            value {
+              id
+            }
+          }
+          id
         }
-        userItemsCount
+        subscriptionFrequency
+        subscriptionInterval
+        subscriptionTrial
       }
+      userItemsCount
     }
-    site {
-      id
-      commerce {
-        businessAddress {
-          country
-        }
-        defaultCountry
-        defaultCurrency
-        quickCheckoutEnabled
+  }
+  site {
+    id
+    commerce {
+      businessAddress {
+        country
       }
+      defaultCountry
+      defaultCurrency
+      quickCheckoutEnabled
     }
-  }"
+  }
+}"
                   data-wf-page-link-href-prefix=""
                   class="w-commerce-commercecartwrapper cart"
                   data-node-type="commerce-cart-wrapper"
@@ -405,7 +399,7 @@
                     data-node-type="commerce-cart-open-link"
                     href="#"
                     ><svg
-                      class="w-commerce-commercecartopenlinkicon icon-12"
+                      class="w-commerce-commercecartopenlinkicon icon-12 _02"
                       width="17px"
                       height="17px"
                       viewBox="0 0 17 17"
@@ -473,14 +467,14 @@
                         >
                           <script
                             type="text/x-wf-template"
-                            id="wf-template-8ef1a7c1-befe-beea-df10-cc1cbb45b756"
+                            id="wf-template-2ca48bb4-c5a3-2e7b-1f32-7b164afeaa8a"
                           >
-                            %3Cdiv%20class%3D%22w-commerce-commercecartitem%22%3E%3Cimg%20src%3D%22https%3A%2F%2Fcdn.prod.website-files.com%2Fplugins%2FBasic%2Fassets%2Fplaceholder.60f9b1840c.svg%22%20data-wf-bindings%3D%22%255B%257B%2522src%2522%253A%257B%2522type%2522%253A%2522ImageRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.f_main_image_4dr%2522%257D%257D%255D%22%20alt%3D%22%22%20class%3D%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2F%3E%3Cdiv%20class%3D%22w-commerce-commercecartiteminfo%22%3E%3Cdiv%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_name_%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3E%3C%2Fdiv%3E%3Cdiv%3EThis%20is%20some%20text%20inside%20of%20a%20div%20block.%3C%2Fdiv%3E%3Cscript%20type%3D%22text%2Fx-wf-template%22%20id%3D%22wf-template-8ef1a7c1-befe-beea-df10-cc1cbb45b75e%22%3E%253Cli%253E%253Cspan%2520data-wf-bindings%253D%2522%25255B%25257B%252522innerHTML%252522%25253A%25257B%252522type%252522%25253A%252522PlainText%252522%25252C%252522filter%252522%25253A%25257B%252522type%252522%25253A%252522identity%252522%25252C%252522params%252522%25253A%25255B%25255D%25257D%25252C%252522dataPath%252522%25253A%252522database.commerceOrder.userItems%25255B%25255D.product.f_sku_properties_3dr%25255B%25255D.name%252522%25257D%25257D%25255D%2522%253E%253C%252Fspan%253E%253Cspan%253E%253A%2520%253C%252Fspan%253E%253Cspan%2520data-wf-bindings%253D%2522%25255B%25257B%252522innerHTML%252522%25253A%25257B%252522type%252522%25253A%252522CommercePropValues%252522%25252C%252522filter%252522%25253A%25257B%252522type%252522%25253A%252522identity%252522%25252C%252522params%252522%25253A%25255B%25255D%25257D%25252C%252522dataPath%252522%25253A%252522database.commerceOrder.userItems%25255B%25255D.product.f_sku_properties_3dr%25255B%25255D%252522%25257D%25257D%25255D%2522%253E%253C%252Fspan%253E%253C%252Fli%253E%3C%2Fscript%3E%3Cul%20data-wf-bindings%3D%22%255B%257B%2522optionSets%2522%253A%257B%2522type%2522%253A%2522CommercePropTable%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%5B%5D%2522%257D%257D%252C%257B%2522optionValues%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.f_sku_values_3dr%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3D%22database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%22%20data-wf-template-id%3D%22wf-template-8ef1a7c1-befe-beea-df10-cc1cbb45b75e%22%3E%3Cli%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D.name%2522%257D%257D%255D%22%3E%3C%2Fspan%3E%3Cspan%3E%3A%20%3C%2Fspan%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D%2522%257D%257D%255D%22%3E%3C%2Fspan%3E%3C%2Fli%3E%3C%2Ful%3E%3Ca%20href%3D%22%23%22%20role%3D%22button%22%20data-wf-bindings%3D%22%255B%257B%2522data-commerce-sku-id%2522%253A%257B%2522type%2522%253A%2522ItemRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.id%2522%257D%257D%255D%22%20class%3D%22w-inline-block%22%20data-wf-cart-action%3D%22remove-item%22%20data-commerce-sku-id%3D%22%22%20aria-label%3D%22Remove%20item%20from%20cart%22%3E%3Cdiv%3ERemove%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cinput%20aria-label%3D%22Update%20quantity%22%20data-wf-bindings%3D%22%255B%257B%2522value%2522%253A%257B%2522type%2522%253A%2522Number%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522numberPrecision%2522%252C%2522params%2522%253A%255B%25220%2522%252C%2522numberPrecision%2522%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.count%2522%257D%257D%252C%257B%2522data-commerce-sku-id%2522%253A%257B%2522type%2522%253A%2522ItemRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.id%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartquantity%22%20required%3D%22%22%20pattern%3D%22%5E%5B0-9%5D%2B%24%22%20inputMode%3D%22numeric%22%20type%3D%22number%22%20name%3D%22quantity%22%20autoComplete%3D%22off%22%20data-wf-cart-action%3D%22update-item-quantity%22%20data-commerce-sku-id%3D%22%22%20value%3D%221%22%2F%3E%3C%2Fdiv%3E
+                            %3Cdiv%20class%3D%22w-commerce-commercecartitem%22%3E%3Cimg%20src%3D%22https%3A%2F%2Fcdn.prod.website-files.com%2Fplugins%2FBasic%2Fassets%2Fplaceholder.60f9b1840c.svg%22%20data-wf-bindings%3D%22%255B%257B%2522src%2522%253A%257B%2522type%2522%253A%2522ImageRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.f_main_image_4dr%2522%257D%257D%255D%22%20alt%3D%22%22%20class%3D%22w-commerce-commercecartitemimage%20w-dyn-bind-empty%22%2F%3E%3Cdiv%20class%3D%22w-commerce-commercecartiteminfo%22%3E%3Cdiv%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_name_%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartproductname%20w-dyn-bind-empty%22%3E%3C%2Fdiv%3E%3Cdiv%3EThis%20is%20some%20text%20inside%20of%20a%20div%20block.%3C%2Fdiv%3E%3Cscript%20type%3D%22text%2Fx-wf-template%22%20id%3D%22wf-template-2ca48bb4-c5a3-2e7b-1f32-7b164afeaa92%22%3E%253Cli%253E%253Cspan%2520data-wf-bindings%253D%2522%25255B%25257B%252522innerHTML%252522%25253A%25257B%252522type%252522%25253A%252522PlainText%252522%25252C%252522filter%252522%25253A%25257B%252522type%252522%25253A%252522identity%252522%25252C%252522params%252522%25253A%25255B%25255D%25257D%25252C%252522dataPath%252522%25253A%252522database.commerceOrder.userItems%25255B%25255D.product.f_sku_properties_3dr%25255B%25255D.name%252522%25257D%25257D%25255D%2522%253E%253C%252Fspan%253E%253Cspan%253E%253A%2520%253C%252Fspan%253E%253Cspan%2520data-wf-bindings%253D%2522%25255B%25257B%252522innerHTML%252522%25253A%25257B%252522type%252522%25253A%252522CommercePropValues%252522%25252C%252522filter%252522%25253A%25257B%252522type%252522%25253A%252522identity%252522%25252C%252522params%252522%25253A%25255B%25255D%25257D%25252C%252522dataPath%252522%25253A%252522database.commerceOrder.userItems%25255B%25255D.product.f_sku_properties_3dr%25255B%25255D%252522%25257D%25257D%25255D%2522%253E%253C%252Fspan%253E%253C%252Fli%253E%3C%2Fscript%3E%3Cul%20data-wf-bindings%3D%22%255B%257B%2522optionSets%2522%253A%257B%2522type%2522%253A%2522CommercePropTable%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%5B%5D%2522%257D%257D%252C%257B%2522optionValues%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.f_sku_values_3dr%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartoptionlist%22%20data-wf-collection%3D%22database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%22%20data-wf-template-id%3D%22wf-template-2ca48bb4-c5a3-2e7b-1f32-7b164afeaa92%22%3E%3Cli%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D.name%2522%257D%257D%255D%22%3E%3C%2Fspan%3E%3Cspan%3E%3A%20%3C%2Fspan%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D%2522%257D%257D%255D%22%3E%3C%2Fspan%3E%3C%2Fli%3E%3C%2Ful%3E%3Ca%20href%3D%22%23%22%20role%3D%22button%22%20data-wf-bindings%3D%22%255B%257B%2522data-commerce-sku-id%2522%253A%257B%2522type%2522%253A%2522ItemRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.id%2522%257D%257D%255D%22%20class%3D%22w-inline-block%22%20data-wf-cart-action%3D%22remove-item%22%20data-commerce-sku-id%3D%22%22%20aria-label%3D%22Remove%20item%20from%20cart%22%3E%3Cdiv%3ERemove%3C%2Fdiv%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cinput%20aria-label%3D%22Update%20quantity%22%20data-wf-bindings%3D%22%255B%257B%2522value%2522%253A%257B%2522type%2522%253A%2522Number%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522numberPrecision%2522%252C%2522params%2522%253A%255B%25220%2522%252C%2522numberPrecision%2522%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.count%2522%257D%257D%252C%257B%2522data-commerce-sku-id%2522%253A%257B%2522type%2522%253A%2522ItemRef%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.sku.id%2522%257D%257D%255D%22%20class%3D%22w-commerce-commercecartquantity%22%20required%3D%22%22%20pattern%3D%22%5E%5B0-9%5D%2B%24%22%20inputMode%3D%22numeric%22%20type%3D%22number%22%20name%3D%22quantity%22%20autoComplete%3D%22off%22%20data-wf-cart-action%3D%22update-item-quantity%22%20data-commerce-sku-id%3D%22%22%20value%3D%221%22%2F%3E%3C%2Fdiv%3E
                           </script>
                           <div
                             class="w-commerce-commercecartlist"
                             data-wf-collection="database.commerceOrder.userItems"
-                            data-wf-template-id="wf-template-8ef1a7c1-befe-beea-df10-cc1cbb45b756"
+                            data-wf-template-id="wf-template-2ca48bb4-c5a3-2e7b-1f32-7b164afeaa8a"
                           >
                             <div class="w-commerce-commercecartitem">
                               <img
@@ -499,7 +493,7 @@
                                 </div>
                                 <script
                                   type="text/x-wf-template"
-                                  id="wf-template-8ef1a7c1-befe-beea-df10-cc1cbb45b75e"
+                                  id="wf-template-2ca48bb4-c5a3-2e7b-1f32-7b164afeaa92"
                                 >
                                   %3Cli%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522PlainText%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D.name%2522%257D%257D%255D%22%3E%3C%2Fspan%3E%3Cspan%3E%3A%20%3C%2Fspan%3E%3Cspan%20data-wf-bindings%3D%22%255B%257B%2522innerHTML%2522%253A%257B%2522type%2522%253A%2522CommercePropValues%2522%252C%2522filter%2522%253A%257B%2522type%2522%253A%2522identity%2522%252C%2522params%2522%253A%255B%255D%257D%252C%2522dataPath%2522%253A%2522database.commerceOrder.userItems%255B%255D.product.f_sku_properties_3dr%255B%255D%2522%257D%257D%255D%22%3E%3C%2Fspan%3E%3C%2Fli%3E
                                 </script>
@@ -507,7 +501,7 @@
                                   data-wf-bindings="%5B%7B%22optionSets%22%3A%7B%22type%22%3A%22CommercePropTable%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr[]%22%7D%7D%2C%7B%22optionValues%22%3A%7B%22type%22%3A%22CommercePropValues%22%2C%22filter%22%3A%7B%22type%22%3A%22identity%22%2C%22params%22%3A%5B%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItems%5B%5D.sku.f_sku_values_3dr%22%7D%7D%5D"
                                   class="w-commerce-commercecartoptionlist"
                                   data-wf-collection="database.commerceOrder.userItems%5B%5D.product.f_sku_properties_3dr"
-                                  data-wf-template-id="wf-template-8ef1a7c1-befe-beea-df10-cc1cbb45b75e"
+                                  data-wf-template-id="wf-template-2ca48bb4-c5a3-2e7b-1f32-7b164afeaa92"
                                 >
                                   <li>
                                     <span
@@ -703,17 +697,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="nav-right">
-                  <div class="nav-button">
-                    <div class="nav-button-wrapper-2">
-                      <a href="/contact-01" class="button w-button"
-                        >Contact me</a
-                      >
-                    </div>
+                <div class="nav-button">
+                  <div class="nav-button-wrapper-2">
+                    <a href="#" class="button _02 w-button">Contact me</a>
                   </div>
                 </div>
                 <div class="menu-button w-nav-button">
-                  <div class="w-icon-nav-menu"></div>
+                  <div class="white w-icon-nav-menu"></div>
                 </div>
               </div>
             </div>
@@ -722,13 +712,13 @@
       </div>
     </section>
     <section
-      data-w-id="b3b133a0-d662-c86b-4108-395c12ed3acb"
-      class="showcase-hero"
+      data-w-id="2a6d5b25-764e-c6cc-1dff-926855c2a8c4"
+      class="home-02-hero"
     >
-      <div class="home-hero-container _01">
-        <div class="home-03-content-01 _01">
+      <div class="home-02-hero-container">
+        <div class="home-02-content-01">
           <div
-            data-w-id="5663e68c-6b75-7f36-abf5-2feb36c9adca"
+            data-w-id="625f8854-4a2d-b10d-304a-d336546452a7"
             style="
               opacity: 0;
               -webkit-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
@@ -740,25 +730,14 @@
               transform: translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0)
                 rotateY(0) rotateZ(0) skew(0, 0);
             "
-            class="overflow-hidden align-right"
+            class="overflow-hidden align-center"
           >
-            <img
-              src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/6682f313962d78a311b3bd6c_Showcase%2002.png"
-              loading="lazy"
-              sizes="(max-width: 767px) 20vw, (max-width: 991px) 21vw, 207.83334350585938px"
-              srcset="
-                https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/6682f313962d78a311b3bd6c_Showcase%2002-p-500.png 500w,
-                https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/6682f313962d78a311b3bd6c_Showcase%2002.png       664w
-              "
-              alt=""
-              class="showcase-thunder _02"
-            />
-            <div class="heading-content _05">
-              <div class="heading---01">Agency kit</div>
+            <div class="heading-content">
+              <div class="heading---01 color-white">BUILD INTO</div>
             </div>
           </div>
           <div
-            data-w-id="5663e68c-6b75-7f36-abf5-2feb36c9adce"
+            data-w-id="625f8854-4a2d-b10d-304a-d336546452ac"
             style="
               opacity: 0;
               -webkit-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
@@ -770,25 +749,14 @@
               transform: translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0)
                 rotateY(0) rotateZ(0) skew(0, 0);
             "
-            class="overflow-hidden align-left"
+            class="home-01-content-03"
           >
-            <img
-              src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/6682f3131130329776855bf7_Home%2004.png"
-              loading="lazy"
-              sizes="(max-width: 479px) 38vw, (max-width: 767px) 30vw, (max-width: 991px) 29vw, 292.125px"
-              srcset="
-                https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/6682f3131130329776855bf7_Home%2004-p-500.png 500w,
-                https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/6682f3131130329776855bf7_Home%2004.png       562w
-              "
-              alt=""
-              class="showcase-thunder"
-            />
-            <div class="heading-content _01">
-              <div class="heading---01 light-gray">for web</div>
+            <div class="heading-content no-space">
+              <div class="heading---01 color-gray">DIGITAL FIRST</div>
             </div>
           </div>
           <div
-            data-w-id="5663e68c-6b75-7f36-abf5-2feb36c9add3"
+            data-w-id="625f8854-4a2d-b10d-304a-d336546452b1"
             style="
               opacity: 0;
               -webkit-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
@@ -800,20 +768,15 @@
               transform: translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0)
                 rotateY(0) rotateZ(0) skew(0, 0);
             "
-            class="overflow-hidden align-center mobile _01"
+            class="overflow-hidden align-center"
           >
-            <div class="heading-content _06">
-              <div class="heading---01">and App </div>
-            </div>
-            <div class="heading-content _04">
-              <div class="body-regular---03 show-hero">
-                We are a full-service development agency, dedicated to delivering meaningful engineering solutions. Our mission is to transform processes into impactful, innovative experiences.
-              </div>
+            <div class="heading-content">
+              <div class="heading---01 color-white">MARKET</div>
             </div>
           </div>
         </div>
         <div
-          data-w-id="5663e68c-6b75-7f36-abf5-2feb36c9adda"
+          data-w-id="ebbbf919-aeab-cedc-788b-a315610bc1f6"
           style="
             opacity: 0;
             -webkit-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
@@ -825,482 +788,526 @@
             transform: translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0)
               rotateY(0) rotateZ(0) skew(0, 0);
           "
-          class="home-01-content-02"
+          class="home-02-content-02"
         >
-          <a href="#" class="book-a-free-call w-button">book a free call</a>
+          <a href="/contact-01" class="book-a-free-call bg-white w-button"
+            >book a free call</a
+          >
+        </div>
+        <img
+          src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/6682f3132f920c3581d34dcd_Home%2003.png"
+          loading="lazy"
+          sizes="(max-width: 1439px) 26vw, 352.79168701171875px"
+          srcset="
+            https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/6682f3132f920c3581d34dcd_Home%2003-p-500.png 500w,
+            https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/6682f3132f920c3581d34dcd_Home%2003.png       680w
+          "
+          alt=""
+          class="hero-image-02"
+        /><img
+          src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e0_Group%201171274991.webp"
+          loading="lazy"
+          sizes="(max-width: 1439px) 26vw, 352.79168701171875px"
+          srcset="
+            https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e0_Group%25201171274991-p-500.webp 500w,
+            https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e0_Group%25201171274991-p-800.webp 800w,
+            https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e0_Group%201171274991.webp         814w
+          "
+          alt=""
+          class="hero-image-02-copy"
+        />
+      </div>
+    </section>
+    <section class="companies-section">
+      <div
+        data-w-id="81d9234a-10ae-7f1f-6187-adc80f9b3847"
+        class="companies-section-container"
+      >
+        <div class="companies-content-01">
+          <div class="body-43 medium align-center">
+            <strong>More than 200+</strong> companies trusted us worldwide
+          </div>
+        </div>
+        <div class="companies-content-20">
+          <div class="companies-div">
+            <img
+              src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e1_Group%209.svg"
+              loading="lazy"
+              alt=""
+            />
+          </div>
+          <div class="companies-div">
+            <img
+              src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e5_Group%201000013429.svg"
+              loading="lazy"
+              alt=""
+            />
+          </div>
+          <div class="companies-div">
+            <img
+              src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e2_Group%20491438.svg"
+              loading="lazy"
+              alt=""
+            />
+          </div>
+          <div class="companies-div">
+            <img
+              src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e4_Group%201000014247.svg"
+              loading="lazy"
+              alt=""
+            />
+          </div>
+          <div class="companies-div">
+            <img
+              src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e3_Group%201000013390.svg"
+              loading="lazy"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </section>
-    
-    <section class="overview-process">
-      <div class="overview-process-container">
-        <div class="client-content-01 _01">
-          <div class="client-content-03 _01">
-            <div class="heading---03">
-              what&#x27;s <span class="heading---03 d0d0d0">included</span>
+    <section class="service-02">
+      <div class="service-02-container">
+        <div class="service-02-content-02">
+          <div class="service-02-content-heading">
+            <div
+              data-w-id="de6483f7-3fed-f0a7-521c-c049804bc093"
+              style="opacity: 0"
+              class="heading---03 d0d0d0"
+            >
+              OUR SERVICES
+            </div>
+          </div>
+          <div class="service-02-content-heading-01">
+            <div
+              data-w-id="b2afe878-44c3-80c2-0d1f-e84716a8413e"
+              style="opacity: 0"
+              class="heading---03"
+            >
+              AND SOLUTION
             </div>
           </div>
         </div>
-        <div class="feature-section">
+        <div class="service-02-content-01">
           <div
-            id="w-node-_96a744cb-241f-2731-8a67-0f0c42f7e954-63b9307c"
-            class="features-block-1"
+            data-w-id="2646b167-30c2-42ec-c544-eef60f58437d"
+            style="opacity: 0"
+            class="service-02-content-04"
           >
-            <div class="heading---03">70+</div>
-            <div class="fea-text">Sections &amp; Components</div>
-            <div class="fea-text-2">
-              With meticulously crafted designs and seamless interaction
+            <div class="service-02-content-05">
+              <div class="service-02-content-07">
+                <div class="sub-heading---01">Webflow Developing</div>
+              </div>
+              <a href="#" class="service-02-content-link w-inline-block"
+                ><img
+                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e6_Group%201000015414.svg"
+                  loading="lazy"
+                  alt=""
+              /></a>
+            </div>
+            <div class="service-02-content-06">
+              <div class="service-02-content-08">
+                <div class="service-02-content-09">
+                  <div class="sub-heading---03">
+                    SHAPE YOUR BRAND WITH OUR FULLY-DEVELOPED BRAND IDENTITY
+                    SERVICES. FROM CREATING A LOGO TO ESTABLISHING BRAND
+                    GUIDELINES.
+                  </div>
+                </div>
+                <div class="service-02-content-10">
+                  <a href="#" class="learn w-button">Learn more</a>
+                </div>
+              </div>
+              <div class="service-02-content-11">
+                <img
+                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e8_branding-design-b%201.webp"
+                  loading="lazy"
+                  sizes="(max-width: 479px) 75vw, (max-width: 767px) 76vw, (max-width: 991px) 57vw, (max-width: 1279px) 34vw, 438px"
+                  srcset="
+                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e8_branding-design-b%25201-p-500.webp 500w,
+                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e8_branding-design-b%25201-p-800.webp 800w,
+                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e8_branding-design-b%201.webp         876w
+                  "
+                  alt=""
+                  class="image-5"
+                />
+              </div>
             </div>
           </div>
           <div
-            id="w-node-ba439cd4-8511-c090-9db5-7152d9e5a5db-63b9307c"
-            class="features-block-1"
+            data-w-id="8e8923e0-4eca-80f2-5084-281e6f91485b"
+            style="opacity: 0"
+            class="service-02-content-04"
           >
-            <img
-              src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667f10db9ad57e6a0a1ab1fa_figma-5%201.svg"
-              loading="lazy"
-              alt=""
-              class="fea-image"
-            />
-            <div class="fea-text">Figma file included</div>
-            <div class="fea-text-2">
-              Email us at
-              <a href="#" class="basecom-link">hello@basecom.co</a> with your
-              receipt to receive Figma file!
+            <div class="service-02-content-05">
+              <div class="service-02-content-07">
+                <div class="sub-heading---01">brand identity</div>
+              </div>
+              <a href="#" class="service-02-content-link w-inline-block"
+                ><img
+                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e6_Group%201000015414.svg"
+                  loading="lazy"
+                  alt=""
+              /></a>
+            </div>
+            <div class="service-02-content-06">
+              <div class="service-02-content-08">
+                <div>
+                  <div class="sub-heading---03">
+                    FROM CUSTOMIZED SOLUTIONS TO E-COMMERCE INTEGRATIONS, WE
+                    BUILD ROBUST WEBSITES THAT MEET YOUR UNIQUE BUSINESS NEEDS.
+                  </div>
+                </div>
+                <div class="service-02-content-10">
+                  <a href="#" class="learn w-button">Learn more</a>
+                </div>
+              </div>
+              <div class="service-02-content-11">
+                <img
+                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e7_brand-marketing%201.webp"
+                  loading="lazy"
+                  sizes="(max-width: 479px) 75vw, (max-width: 767px) 76vw, (max-width: 991px) 57vw, (max-width: 1279px) 34vw, 438px"
+                  srcset="
+                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e7_brand-marketing%25201-p-500.webp 500w,
+                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e7_brand-marketing%25201-p-800.webp 800w,
+                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e7_brand-marketing%201.webp         876w
+                  "
+                  alt=""
+                  class="image-5"
+                />
+              </div>
             </div>
           </div>
           <div
-            id="w-node-_2a4e3123-df0c-8aab-24e6-e2a38fb75df1-63b9307c"
-            class="features-block-1"
+            data-w-id="25d8db5e-ebb1-c64e-6354-e4d4edd63f1b"
+            style="opacity: 0"
+            class="service-02-content-04"
           >
-            <img
-              src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667f18452f20cc5796023f49_Group%20494790.svg"
-              loading="lazy"
-              alt=""
-            />
-            <div class="fea-text _02">Pre-made global components</div>
-          </div>
-          <div
-            id="w-node-_3776a544-5227-d0c6-2162-97cd0d6c8450-63b9307c"
-            class="features-block-1 _03"
-          >
-            <div class="fea-card-text">
-              <div class="heading---03">25+</div>
-              <div class="fea-text">Unique Landing pages</div>
+            <div class="service-02-content-05">
+              <div class="service-02-content-07">
+                <div class="sub-heading---01">Branding Design</div>
+              </div>
+              <a href="#" class="service-02-content-link w-inline-block"
+                ><img
+                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e6_Group%201000015414.svg"
+                  loading="lazy"
+                  alt=""
+              /></a>
             </div>
-            <div class="fea-card-image">
+            <div class="service-02-content-06">
+              <div class="service-02-content-08">
+                <div>
+                  <div class="sub-heading---03">
+                    TRANSFORM YOUR ONLINE PRESENCE WITH OUR PROFESSIONAL WEB
+                    DESIGN SERVICES. WE CREATE STUNNING, USER-FRIENDLY WEBSITES
+                    THAT CONVERTS.
+                  </div>
+                </div>
+                <div class="service-02-content-10">
+                  <a href="#" class="learn w-button">Learn more</a>
+                </div>
+              </div>
+              <div class="service-02-content-11">
+                <img
+                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e9_webflow-developing%201.webp"
+                  loading="lazy"
+                  sizes="(max-width: 479px) 75vw, (max-width: 767px) 76vw, (max-width: 991px) 57vw, (max-width: 1279px) 34vw, 438px"
+                  srcset="
+                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e9_webflow-developing%25201-p-500.webp 500w,
+                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e9_webflow-developing%25201-p-800.webp 800w,
+                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930e9_webflow-developing%201.webp         876w
+                  "
+                  alt=""
+                  class="image-5"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="project-02">
+      <div class="project-02-container">
+        <div class="project-01-heading">
+          <div class="project-01-content-01">
+            <div
+              data-w-id="920b31b7-62da-2032-fdc0-4cf7ed68a870"
+              style="opacity: 0"
+              class="heading---03 d0d0d0"
+            >
+              FEATURED
+            </div>
+          </div>
+          <div class="project-01-content-02">
+            <div
+              data-w-id="920b31b7-62da-2032-fdc0-4cf7ed68a873"
+              style="opacity: 0"
+              class="heading---03"
+            >
+              PROJECTS
+            </div>
+          </div>
+        </div>
+        <div class="project-02-content-01">
+          <div class="project-02-content-02">
+            <div class="w-dyn-list">
+              <div role="list" class="collection-list _02 w-dyn-items">
+                <div
+                  data-w-id="98729b2f-fa14-ed31-fd98-4a6e2c1656be"
+                  style="
+                    opacity: 0;
+                    -webkit-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    -moz-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    -ms-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  "
+                  role="listitem"
+                  class="w-dyn-item"
+                >
+                  <a
+                    href="/project/pixel-line--brand-design"
+                    class="project-02-content-03 w-inline-block"
+                    ><div class="project-02-content-04">
+                      <img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b9308d_design-project%20(4)%201.webp"
+                        loading="lazy"
+                        alt=""
+                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 93vw, (max-width: 991px) 76vw, (max-width: 1279px) 47vw, 580px"
+                        srcset="
+                          https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b9308d_design-project%2520(4)%25201-p-500.webp   500w,
+                          https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b9308d_design-project%2520(4)%25201-p-800.webp   800w,
+                          https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b9308d_design-project%2520(4)%25201-p-1080.webp 1080w,
+                          https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b9308d_design-project%20(4)%201.webp            1446w
+                        "
+                        class="p-image"
+                      />
+                    </div>
+                    <div class="project-02-content-05">
+                      <div class="project-01-tag">
+                        <div class="p-tag p2">BRANDING</div>
+                        <div class="p-tag p2">PRODUCT DESIGN</div>
+                      </div>
+                      <div class="project-01-card-heading">
+                        <div class="sub-heading---01">
+                          PIXEL LINE- BRAND DESIGN
+                        </div>
+                      </div>
+                      <div class="project-01-btn">
+                        <div class="p-button p2">live project</div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+                <div
+                  data-w-id="98729b2f-fa14-ed31-fd98-4a6e2c1656be"
+                  style="
+                    opacity: 0;
+                    -webkit-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    -moz-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    -ms-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  "
+                  role="listitem"
+                  class="w-dyn-item"
+                >
+                  <a
+                    href="/project/pantonixo---saas-website"
+                    class="project-02-content-03 w-inline-block"
+                    ><div class="project-02-content-04">
+                      <img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b9308c_design-project%20(3)%201.webp"
+                        loading="lazy"
+                        alt=""
+                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 93vw, (max-width: 991px) 76vw, (max-width: 1279px) 47vw, 580px"
+                        srcset="
+                          https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b9308c_design-project%2520(3)%25201-p-500.webp   500w,
+                          https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b9308c_design-project%2520(3)%25201-p-800.webp   800w,
+                          https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b9308c_design-project%2520(3)%25201-p-1080.webp 1080w,
+                          https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b9308c_design-project%20(3)%201.webp            1446w
+                        "
+                        class="p-image"
+                      />
+                    </div>
+                    <div class="project-02-content-05">
+                      <div class="project-01-tag">
+                        <div class="p-tag p2">BRANDING</div>
+                        <div class="p-tag p2">PRODUCT DESIGN</div>
+                      </div>
+                      <div class="project-01-card-heading">
+                        <div class="sub-heading---01">
+                          pantonixo - saas website
+                        </div>
+                      </div>
+                      <div class="project-01-btn">
+                        <div class="p-button p2">live project</div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-02-content-02 _02">
+            <div class="w-dyn-list">
+              <div role="list" class="collection-list _02 w-dyn-items">
+                <div
+                  data-w-id="36da44a5-b210-a6f4-04f4-69561f6d8c20"
+                  style="
+                    opacity: 0;
+                    -webkit-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    -moz-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    -ms-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  "
+                  role="listitem"
+                  class="w-dyn-item"
+                >
+                  <a
+                    href="/project/up-deck---web-design"
+                    class="project-02-content-03 w-inline-block"
+                    ><div class="project-02-content-04">
+                      <img
+                        src="https://cdn.prod.website-files.com/6643cb293673bff4f589ecd2/6643cc1421b44cc323159359_design-project%20(2)%20(6)%201.webp"
+                        loading="lazy"
+                        alt=""
+                        class="p-image"
+                      />
+                    </div>
+                    <div class="project-02-content-05">
+                      <div class="project-01-tag">
+                        <div class="p-tag p2">BRANDING</div>
+                        <div class="p-tag p2">PRODUCT DESIGN</div>
+                      </div>
+                      <div class="project-01-card-heading">
+                        <div class="sub-heading---01">UP DeCK - WEB DESIGN</div>
+                      </div>
+                      <div class="project-01-btn">
+                        <div class="p-button p2">live project</div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+                <div
+                  data-w-id="36da44a5-b210-a6f4-04f4-69561f6d8c20"
+                  style="
+                    opacity: 0;
+                    -webkit-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    -moz-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    -ms-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                    transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                      rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  "
+                  role="listitem"
+                  class="w-dyn-item"
+                >
+                  <a
+                    href="/project/intensify---saas-website"
+                    class="project-02-content-03 w-inline-block"
+                    ><div class="project-02-content-04">
+                      <img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b9308a_design-project%20(2)%20(5)%201.webp"
+                        loading="lazy"
+                        alt=""
+                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 93vw, (max-width: 991px) 76vw, (max-width: 1279px) 47vw, 580px"
+                        srcset="
+                          https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b9308a_design-project%2520(2)%2520(5)%25201-p-500.webp   500w,
+                          https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b9308a_design-project%2520(2)%2520(5)%25201-p-800.webp   800w,
+                          https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b9308a_design-project%2520(2)%2520(5)%25201-p-1080.webp 1080w,
+                          https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b9308a_design-project%20(2)%20(5)%201.webp              1160w
+                        "
+                        class="p-image"
+                      />
+                    </div>
+                    <div class="project-02-content-05">
+                      <div class="project-01-tag">
+                        <div class="p-tag p2">BRANDING</div>
+                        <div class="p-tag p2">PRODUCT DESIGN</div>
+                      </div>
+                      <div class="project-01-card-heading">
+                        <div class="sub-heading---01">
+                          INTENSIFY - saas website
+                        </div>
+                      </div>
+                      <div class="project-01-btn">
+                        <div class="p-button p2">live project</div>
+                      </div>
+                    </div></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="statistics-02">
+      <div class="statistics-02-container">
+        <div class="statistics-02-content-01">
+          <div
+            data-w-id="81e8f885-e2b7-21e0-7ccf-2cbb84a1b3b5"
+            style="opacity: 0"
+            class="statistics-02-content-03"
+          >
+            <div class="statistics-02-content-05">
               <img
-                src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667f11fab295a34a525f8d82_Frame%20493772.png"
+                src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930ea_Rectangle%2034624414.png"
                 loading="lazy"
-                sizes="(max-width: 479px) 70vw, (max-width: 767px) 51vw, (max-width: 1279px) 8vw, 103.58333587646484px"
+                sizes="(max-width: 479px) 78vw, (max-width: 637px) 79vw, (max-width: 767px) 504px, (max-width: 991px) 66vw, (max-width: 1279px) 43vw, 504px"
                 srcset="
-                  https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667f11fab295a34a525f8d82_Frame%20493772-p-500.png 500w,
-                  https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667f11fab295a34a525f8d82_Frame%20493772.png       720w
+                  https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930ea_Rectangle%252034624414-p-500.png 500w,
+                  https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930ea_Rectangle%2034624414.png         504w
                 "
                 alt=""
-                class="main-image"
+                class="image-6"
               />
             </div>
+            <div class="statistics-02-content-06">
+              <div class="sub-heading---03 light-gray">
+                We strategize, design and implement effective solutions to
+                deliver delightful and memorable experiences.
+              </div>
+            </div>
+          </div>
+          <div class="statistics-02-content-04">
+            <div class="statistics-02-content-07">
+              <div
+                data-w-id="f233c584-bc5d-56b9-4a6a-98117b2dbd6d"
+                style="opacity: 0"
+                class="heading---03 dim-gray"
+              >
+                WE’RE KNOWN
+              </div>
+            </div>
+            <div class="statistics-02-content-08">
+              <div
+                data-w-id="c53d5c2f-6522-1a43-3c35-4cad69b0af06"
+                style="opacity: 0"
+                class="heading---03 white"
+              >
+                GLOBALLYFOR SUCCESS
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="overview-pages">
-      <div class="overview-pages-container">
-        <div class="home-pages">
-          <div class="client-content-01 _02">
-            <div class="client-content-03">
-              <div class="heading---03 d0d0d0">Converting</div>
-            </div>
-            <div class="client-content-04 blog-02-m-content-03">
-              <div class="heading---03">homepages.</div>
-            </div>
-          </div>
-          <div class="w-layout-grid grid-72">
-            <a
-              href="/homepage-01"
-              id="w-node-d8971686-7bbf-61ed-aed5-dcb2abc14f4f-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316b_Divento%2520Homepage%252001-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316b_Divento%2520Homepage%252001-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316b_Divento%2520Homepage%252001-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316b_Divento%2520Homepage%252001-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316b_Divento%2520Homepage%252001-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316b_Divento%20Homepage%2001.webp            2160w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316b_Divento%20Homepage%2001.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Home Page 01</h1>
-              </div></a
-            ><a
-              href="/homepage-02"
-              id="w-node-_02e75822-de18-75fb-d1dc-9e2a8dfa8d02-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93171_Divento%2520Homepage%252002-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93171_Divento%2520Homepage%252002-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93171_Divento%2520Homepage%252002-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93171_Divento%2520Homepage%252002-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93171_Divento%2520Homepage%252002-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93171_Divento%20Homepage%2002.webp            2160w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93171_Divento%20Homepage%2002.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Home Page 02</h1>
-              </div></a
-            ><a
-              href="/homepage-03"
-              id="w-node-_580aa09e-2797-508c-804b-9fa7f899e22c-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93174_Divento%2520Homepage%252003-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93174_Divento%2520Homepage%252003-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93174_Divento%2520Homepage%252003-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93174_Divento%2520Homepage%252003-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93174_Divento%2520Homepage%252003-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93174_Divento%20Homepage%2003.webp            2160w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93174_Divento%20Homepage%2003.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Home Page 03</h1>
-              </div></a
-            >
-          </div>
-        </div>
-        <div class="home-pages">
-          <div class="client-content-01 _02">
-            <div class="client-content-03 _01">
-              <div class="heading---03">
-                pricing <span class="heading---03 d0d0d0">pages</span>
-              </div>
-            </div>
-          </div>
-          <div class="w-layout-grid grid-72">
-            <a
-              href="/pricing-01"
-              id="w-node-_420cb892-0dbe-4a79-0f0a-554c0cf473f8-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316e_Divento%2520Pricing%2520page%252001-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316e_Divento%2520Pricing%2520page%252001-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316e_Divento%2520Pricing%2520page%252001-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316e_Divento%2520Pricing%2520page%252001-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316e_Divento%2520Pricing%2520page%252001-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316e_Divento%2520Pricing%2520page%252001-p-2600.webp 2600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316e_Divento%20Pricing%20page%2001.webp              2880w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316e_Divento%20Pricing%20page%2001.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Pricing Page 01</h1>
-              </div></a
-            ><a
-              href="/pricing-02"
-              id="w-node-_420cb892-0dbe-4a79-0f0a-554c0cf473fe-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316d_Divento%2520Pricing%2520page%252002-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316d_Divento%2520Pricing%2520page%252002-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316d_Divento%2520Pricing%2520page%252002-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316d_Divento%2520Pricing%2520page%252002-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316d_Divento%2520Pricing%2520page%252002-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316d_Divento%2520Pricing%2520page%252002-p-2600.webp 2600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316d_Divento%20Pricing%20page%2002.webp              2880w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316d_Divento%20Pricing%20page%2002.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Pricing Page 02</h1>
-              </div></a
-            ><a
-              href="/pricing-03"
-              id="w-node-_420cb892-0dbe-4a79-0f0a-554c0cf47404-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93173_Divento%2520Pricing%2520page%252003-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93173_Divento%2520Pricing%2520page%252003-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93173_Divento%2520Pricing%2520page%252003-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93173_Divento%2520Pricing%2520page%252003-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93173_Divento%2520Pricing%2520page%252003-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93173_Divento%2520Pricing%2520page%252003-p-2600.webp 2600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93173_Divento%20Pricing%20page%2003.webp              2880w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93173_Divento%20Pricing%20page%2003.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Pricing Page 03</h1>
-              </div></a
-            >
-          </div>
-        </div>
-        <div class="home-pages">
-          <div class="client-content-01 _02">
-            <div class="client-content-03 _01">
-              <div class="heading---03">
-                CMS <span class="heading---03 d0d0d0">pages</span>
-              </div>
-            </div>
-          </div>
-          <div class="w-layout-grid grid-72">
-            <a
-              href="/project-01"
-              id="w-node-_77a76928-77a8-017a-f7fe-f334b5da9c33-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93178_Divento%2520Project%2520page%252001-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93178_Divento%2520Project%2520page%252001-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93178_Divento%2520Project%2520page%252001-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93178_Divento%2520Project%2520page%252001-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93178_Divento%2520Project%2520page%252001-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93178_Divento%2520Project%2520page%252001-p-2600.webp 2600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93178_Divento%20Project%20page%2001.webp              2880w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93178_Divento%20Project%20page%2001.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Project Page 01</h1>
-              </div></a
-            ><a
-              href="/project-02"
-              id="w-node-_77a76928-77a8-017a-f7fe-f334b5da9c39-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93175_Divento%2520Project%2520page%252002-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93175_Divento%2520Project%2520page%252002-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93175_Divento%2520Project%2520page%252002-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93175_Divento%2520Project%2520page%252002-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93175_Divento%2520Project%2520page%252002-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93175_Divento%2520Project%2520page%252002-p-2600.webp 2600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93175_Divento%20Project%20page%2002.webp              2880w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93175_Divento%20Project%20page%2002.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Project Page 02</h1>
-              </div></a
-            ><a
-              href="/project-03"
-              id="w-node-_77a76928-77a8-017a-f7fe-f334b5da9c3f-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93176_Divento%2520Project%2520page%252003-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93176_Divento%2520Project%2520page%252003-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93176_Divento%2520Project%2520page%252003-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93176_Divento%2520Project%2520page%252003-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93176_Divento%2520Project%2520page%252003-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93176_Divento%2520Project%2520page%252003-p-2600.webp 2600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93176_Divento%20Project%20page%2003.webp              2880w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93176_Divento%20Project%20page%2003.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Project Page 03</h1>
-              </div></a
-            ><a
-              href="/blog-01"
-              id="w-node-_79526616-c40f-02b5-21b5-f815218bb9ef-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316a_Divento%2520Blog%2520page%252001-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316a_Divento%2520Blog%2520page%252001-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316a_Divento%2520Blog%2520page%252001-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316a_Divento%2520Blog%2520page%252001-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316a_Divento%2520Blog%2520page%252001-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316a_Divento%2520Blog%2520page%252001-p-2600.webp 2600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316a_Divento%20Blog%20page%2001.webp              2880w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316a_Divento%20Blog%20page%2001.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Blog Page 01</h1>
-              </div></a
-            ><a
-              href="/blog-02"
-              id="w-node-_07d631d5-272d-bd90-ad21-f9f8e1738ce4-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93177_Divento%2520Blog%2520page%252002-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93177_Divento%2520Blog%2520page%252002-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93177_Divento%2520Blog%2520page%252002-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93177_Divento%2520Blog%2520page%252002-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93177_Divento%2520Blog%2520page%252002-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93177_Divento%2520Blog%2520page%252002-p-2600.webp 2600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93177_Divento%20Blog%20page%2002.webp              2880w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93177_Divento%20Blog%20page%2002.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Blog Page 02</h1>
-              </div></a
-            ><a
-              href="/blog-03"
-              id="w-node-b65ade8f-7d2a-854c-efde-cda611a11e51-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93169_Divento%2520Blog%2520page%252003-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93169_Divento%2520Blog%2520page%252003-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93169_Divento%2520Blog%2520page%252003-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93169_Divento%2520Blog%2520page%252003-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93169_Divento%2520Blog%2520page%252003-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93169_Divento%2520Blog%2520page%252003-p-2600.webp 2600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93169_Divento%20Blog%20page%2003.webp              2880w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93169_Divento%20Blog%20page%2003.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Blog Page 03</h1>
-              </div></a
-            ><a
-              href="https://divento.webflow.io/project/mia-muse---saas-website-copy-3"
-              id="w-node-_624934c7-0d48-dbde-0fc5-815b0b08c381-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93179_Divento%2520Project%2520singel%2520page-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93179_Divento%2520Project%2520singel%2520page-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93179_Divento%2520Project%2520singel%2520page-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93179_Divento%2520Project%2520singel%2520page-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93179_Divento%2520Project%2520singel%2520page-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93179_Divento%2520Project%2520singel%2520page-p-2600.webp 2600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93179_Divento%20Project%20singel%20page.webp              2880w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93179_Divento%20Project%20singel%20page.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Project Single</h1>
-              </div></a
-            ><a
-              href="https://divento.webflow.io/vlog-post/minimalistic-design-concept-for-balmain-online-store-copy-4"
-              id="w-node-d214b26a-f33f-ce38-3dfc-f0907e2805c8-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93172_Divento%2520Blog%2520singel%2520page-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93172_Divento%2520Blog%2520singel%2520page-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93172_Divento%2520Blog%2520singel%2520page-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93172_Divento%2520Blog%2520singel%2520page-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93172_Divento%2520Blog%2520singel%2520page-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93172_Divento%2520Blog%2520singel%2520page-p-2600.webp 2600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93172_Divento%20Blog%20singel%20page.webp              2880w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93172_Divento%20Blog%20singel%20page.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Blog Single</h1>
-              </div></a
-            >
-          </div>
-        </div>
-        <div class="home-pages _02">
-          <div class="client-content-01 _02">
-            <div class="client-content-03 _01">
-              <div class="heading---03">
-                other <span class="heading---03 d0d0d0">pages</span>
-              </div>
-            </div>
-          </div>
+        <div class="statistics-02-content-02">
           <div
-            data-w-id="60978d54-3c01-2ec3-7bb6-82236bcc54b6"
+            data-w-id="5b268725-acdf-f0e1-187a-11e8ce72a1a9"
             style="
               opacity: 0;
               -webkit-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
@@ -1312,111 +1319,475 @@
               transform: translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0)
                 rotateY(0) rotateZ(0) skew(0, 0);
             "
-            class="w-layout-grid grid-72"
+            class="statistics-02-content-09"
           >
-            <a
-              href="/about-us"
-              id="w-node-_60978d54-3c01-2ec3-7bb6-82236bcc54b7-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93168_Divento%2520About%2520page-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93168_Divento%2520About%2520page-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93168_Divento%2520About%2520page-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93168_Divento%2520About%2520page-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93168_Divento%2520About%2520page-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93168_Divento%2520About%2520page-p-2600.webp 2600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93168_Divento%20About%20page.webp            2880w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93168_Divento%20About%20page.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">About Page</h1>
-              </div></a
-            ><a
-              href="/contact-01"
-              id="w-node-_60978d54-3c01-2ec3-7bb6-82236bcc54bd-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316c_Divento%2520Contact%2520us%2520page%252001-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316c_Divento%2520Contact%2520us%2520page%252001-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316c_Divento%2520Contact%2520us%2520page%252001-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316c_Divento%2520Contact%2520us%2520page%252001-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316c_Divento%2520Contact%2520us%2520page%252001-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316c_Divento%2520Contact%2520us%2520page%252001-p-2600.webp 2600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316c_Divento%20Contact%20us%20page%2001.webp                2880w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b9316c_Divento%20Contact%20us%20page%2001.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Contact Page 01</h1>
-              </div></a
-            ><a
-              href="/contact-02"
-              id="w-node-_60978d54-3c01-2ec3-7bb6-82236bcc54c3-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93166_Divento%2520Contact%2520us%2520page%252001-2-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93166_Divento%2520Contact%2520us%2520page%252001-2-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93166_Divento%2520Contact%2520us%2520page%252001-2-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93166_Divento%2520Contact%2520us%2520page%252001-2-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93166_Divento%2520Contact%2520us%2520page%252001-2-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93166_Divento%2520Contact%2520us%2520page%252001-2-p-2600.webp 2600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93166_Divento%20Contact%20us%20page%2001-2.webp                2880w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93166_Divento%20Contact%20us%20page%2001-2.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Contact Page 02</h1>
-              </div></a
-            ><a
-              href="/contact-03"
-              id="w-node-a79cea4d-895c-a50a-9f47-e646ff17e9cc-63b9307c"
-              class="page-preview-card w-inline-block"
-              ><div class="page-image-box">
-                <img
-                  sizes="(max-width: 479px) 81vw, (max-width: 991px) 86vw, (max-width: 1279px) 89vw, 1140px"
-                  srcset="
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93167_Divento%2520Contact%2520us%2520page%252001-1-p-500.webp   500w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93167_Divento%2520Contact%2520us%2520page%252001-1-p-800.webp   800w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93167_Divento%2520Contact%2520us%2520page%252001-1-p-1080.webp 1080w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93167_Divento%2520Contact%2520us%2520page%252001-1-p-1600.webp 1600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93167_Divento%2520Contact%2520us%2520page%252001-1-p-2000.webp 2000w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93167_Divento%2520Contact%2520us%2520page%252001-1-p-2600.webp 2600w,
-                    https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93167_Divento%20Contact%20us%20page%2001-1.webp                2880w
-                  "
-                  alt=""
-                  src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b93167_Divento%20Contact%20us%20page%2001-1.webp"
-                  loading="lazy"
-                  class="image-69"
-                />
-              </div>
-              <div class="page-nma">
-                <h1 class="body-medium---01">Contact Page 03</h1>
-              </div></a
-            >
+            <div class="statistics-02-content-10">
+              <div class="heading---04 color-white">50+</div>
+            </div>
+            <div class="statistics-02-content-11">
+              <div class="sub-heading---03 light-gray">TOTAL PROJECTS</div>
+            </div>
+          </div>
+          <div
+            data-w-id="2e83f85b-7eed-6fe6-6595-b025e1592f7e"
+            style="
+              opacity: 0;
+              -webkit-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -moz-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -ms-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0)
+                rotateY(0) rotateZ(0) skew(0, 0);
+              transform: translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0)
+                rotateY(0) rotateZ(0) skew(0, 0);
+            "
+            class="statistics-02-content-09"
+          >
+            <div class="statistics-02-content-10">
+              <div class="heading---04 color-white">100+</div>
+            </div>
+            <div class="statistics-02-content-11">
+              <div class="sub-heading---03 light-gray">INDUSTRIES SERVED</div>
+            </div>
+          </div>
+          <div
+            data-w-id="71510f81-0b1a-b14f-99fa-a8ab9224b413"
+            style="
+              opacity: 0;
+              -webkit-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -moz-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -ms-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0)
+                rotateY(0) rotateZ(0) skew(0, 0);
+              transform: translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0)
+                rotateY(0) rotateZ(0) skew(0, 0);
+            "
+            class="statistics-02-content-09"
+          >
+            <div class="statistics-02-content-10">
+              <div class="heading---04 color-white">40+</div>
+            </div>
+            <div class="statistics-02-content-11">
+              <div class="sub-heading---03 light-gray">QUALITY AWARDS</div>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="client-02">
+      <div class="client-02-container">
+        <div class="client-content-01">
+          <div class="client-02-content-01">
+            <div class="heading---03 black-tarmac">Clients</div>
+          </div>
+          <div class="client-content-04">
+            <div class="heading---03 d0d0d0">FEEDBACK</div>
+          </div>
+        </div>
+        <div class="client-02-content-02">
+          <div
+            data-delay="4000"
+            data-animation="slide"
+            class="slider w-slider"
+            data-autoplay="false"
+            data-easing="ease"
+            data-hide-arrows="false"
+            data-disable-swipe="false"
+            data-autoplay-limit="0"
+            data-nav-spacing="3"
+            data-duration="500"
+            data-infinite="true"
+          >
+            <div class="mask-copy w-slider-mask">
+              <div
+                data-w-id="9b4f9cc5-6303-4d63-798f-74c7f5d15535"
+                style="
+                  opacity: 0;
+                  -webkit-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  -moz-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  -ms-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                    rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                  transform: translate3d(0, 80px, 0) scale3d(1, 1, 1) rotateX(0)
+                    rotateY(0) rotateZ(0) skew(0, 0);
+                "
+                class="slide-copy w-slide"
+              >
+                <div class="client-02-content-03">
+                  <div class="client-02-content-04">
+                    <img
+                      src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c1_man-portrait-smile-and-realistic%201.webp"
+                      loading="lazy"
+                      sizes="(max-width: 479px) 75vw, (max-width: 767px) 66vw, 323px"
+                      srcset="
+                        https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c1_man-portrait-smile-and-realistic%25201-p-500.webp 500w,
+                        https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c1_man-portrait-smile-and-realistic%201.webp         600w
+                      "
+                      alt=""
+                      class="client-02-content-06"
+                    />
+                  </div>
+                  <div class="client-02-content-05">
+                    <div>
+                      <img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c3_Frame.svg"
+                        loading="lazy"
+                        alt=""
+                        class="star"
+                      /><img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c3_Frame.svg"
+                        loading="lazy"
+                        alt=""
+                        class="star"
+                      /><img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c3_Frame.svg"
+                        loading="lazy"
+                        alt=""
+                        class="star"
+                      /><img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c3_Frame.svg"
+                        loading="lazy"
+                        alt=""
+                        class="star"
+                      /><img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930dc_Group%201000015209.svg"
+                        loading="lazy"
+                        alt=""
+                        class="star"
+                      />
+                    </div>
+                    <div class="client-content-09">
+                      <div class="sub-heading---01">
+                        “a design genius! Working with him on our mobile app for
+                        undering which is very important for to grow yobrand
+                        online make represented”
+                      </div>
+                    </div>
+                    <div class="client-content-10">
+                      <div class="client-02-content-07">
+                        <div class="body-medium---01">Matthew Johnson</div>
+                      </div>
+                      <div class="body-regular---02">Fashion Designer</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-copy w-slide">
+                <div class="client-02-content-03">
+                  <div class="client-02-content-04">
+                    <img
+                      src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c1_man-portrait-smile-and-realistic%201.webp"
+                      loading="lazy"
+                      sizes="(max-width: 479px) 75vw, (max-width: 767px) 66vw, 323px"
+                      srcset="
+                        https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c1_man-portrait-smile-and-realistic%25201-p-500.webp 500w,
+                        https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c1_man-portrait-smile-and-realistic%201.webp         600w
+                      "
+                      alt=""
+                      class="client-02-content-06"
+                    />
+                  </div>
+                  <div class="client-02-content-05">
+                    <div>
+                      <img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c3_Frame.svg"
+                        loading="lazy"
+                        alt=""
+                        class="star"
+                      /><img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c3_Frame.svg"
+                        loading="lazy"
+                        alt=""
+                        class="star"
+                      /><img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c3_Frame.svg"
+                        loading="lazy"
+                        alt=""
+                        class="star"
+                      /><img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c3_Frame.svg"
+                        loading="lazy"
+                        alt=""
+                        class="star"
+                      /><img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930dc_Group%201000015209.svg"
+                        loading="lazy"
+                        alt=""
+                        class="star"
+                      />
+                    </div>
+                    <div class="client-content-09">
+                      <div class="sub-heading---01">
+                        “a design genius! Working with him on our mobile app for
+                        undering which is very important for to grow yobrand
+                        online make represented”
+                      </div>
+                    </div>
+                    <div class="client-content-10">
+                      <div class="client-02-content-07">
+                        <div class="body-medium---01">Matthew Johnson</div>
+                      </div>
+                      <div class="body-regular---02">Fashion Designer</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-copy w-slide">
+                <div class="client-02-content-03">
+                  <div class="client-02-content-04">
+                    <img
+                      src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c1_man-portrait-smile-and-realistic%201.webp"
+                      loading="lazy"
+                      sizes="(max-width: 479px) 75vw, (max-width: 767px) 66vw, 323px"
+                      srcset="
+                        https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c1_man-portrait-smile-and-realistic%25201-p-500.webp 500w,
+                        https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c1_man-portrait-smile-and-realistic%201.webp         600w
+                      "
+                      alt=""
+                      class="client-02-content-06"
+                    />
+                  </div>
+                  <div class="client-02-content-05">
+                    <div>
+                      <img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c3_Frame.svg"
+                        loading="lazy"
+                        alt=""
+                        class="star"
+                      /><img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c3_Frame.svg"
+                        loading="lazy"
+                        alt=""
+                        class="star"
+                      /><img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c3_Frame.svg"
+                        loading="lazy"
+                        alt=""
+                        class="star"
+                      /><img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c3_Frame.svg"
+                        loading="lazy"
+                        alt=""
+                        class="star"
+                      /><img
+                        src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930dc_Group%201000015209.svg"
+                        loading="lazy"
+                        alt=""
+                        class="star"
+                      />
+                    </div>
+                    <div class="client-content-09">
+                      <div class="sub-heading---01">
+                        “a design genius! Working with him on our mobile app for
+                        undering which is very important for to grow yobrand
+                        online make represented”
+                      </div>
+                    </div>
+                    <div class="client-content-10">
+                      <div class="client-02-content-07">
+                        <div class="body-medium---01">Matthew Johnson</div>
+                      </div>
+                      <div class="body-regular---02">Fashion Designer</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-w-id="9b4f9cc5-6303-4d63-798f-74c7f5d15571"
+              style="opacity: 0"
+              class="left-arrow-copy w-slider-arrow-left"
+            >
+              <img
+                src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930ab_Group%201000015184.svg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div
+              data-w-id="9b4f9cc5-6303-4d63-798f-74c7f5d15573"
+              style="opacity: 0"
+              class="right-arrow-copy w-slider-arrow-right"
+            >
+              <img
+                src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b93076/667d12c4e9ccd7c563b930c4_Group%20100001584.svg"
+                loading="lazy"
+                alt=""
+              />
+            </div>
+            <div class="slide-nav w-slider-nav w-round w-num"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="blog-02">
+      <div class="blog-02-container">
+        <section class="blog-01-home">
+          <div class="blog-01-home-container">
+            <div class="project-01-heading _02">
+              <div class="project-01-content-01 _02">
+                <div class="heading---03 d0d0d0">LATEST</div>
+              </div>
+              <div class="project-01-content-02">
+                <div class="heading---03">FROM BLOG</div>
+              </div>
+            </div>
+            <div class="blog-01-home-content-01">
+              <div class="blog-01-home-content-02">
+                <div class="w-dyn-list">
+                  <div role="list" class="collection-list-2 w-dyn-items">
+                    <div
+                      data-w-id="72e3a326-18a7-7783-2cc3-9a349bc9936a"
+                      style="
+                        opacity: 0;
+                        -webkit-transform: translate3d(0, 80px, 0)
+                          scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                          skew(0, 0);
+                        -moz-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                        -ms-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                        transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                      "
+                      role="listitem"
+                      class="w-dyn-item"
+                    >
+                      <a
+                        href="/vlog-post/video-marketing-tips-creating-engaging-content"
+                        class="blog-01-home-content-03 _02 w-inline-block"
+                        ><div class="blog-01-home-content-04 _02">
+                          <img
+                            src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b93093_Rectangle%2034624417.webp"
+                            loading="lazy"
+                            alt=""
+                            sizes="(max-width: 479px) 80vw, (max-width: 767px) 345px, (max-width: 991px) 45vw, (max-width: 1279px) 27vw, 345px"
+                            srcset="
+                              https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b93093_Rectangle%252034624417-p-500.webp 500w,
+                              https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b93093_Rectangle%2034624417.webp         690w
+                            "
+                            class="b-link-01-image"
+                          />
+                        </div>
+                        <div class="blog-01-home-content-05 _02">
+                          <div class="blog-02-content-01">
+                            <div class="b-tag _02">PRODUCT DEVELOPMENT</div>
+                          </div>
+                          <div class="blog-01-home-content-07">
+                            <div class="body-regular---01">
+                              VIDEO MARKETING TIPS: CREATING ENGAGING CONTENT
+                            </div>
+                          </div>
+                          <div class="blog-02-content-02">
+                            <div class="body-regular---02">May 15, 2024</div>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div
+                      data-w-id="72e3a326-18a7-7783-2cc3-9a349bc9936a"
+                      style="
+                        opacity: 0;
+                        -webkit-transform: translate3d(0, 80px, 0)
+                          scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                          skew(0, 0);
+                        -moz-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                        -ms-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                        transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                      "
+                      role="listitem"
+                      class="w-dyn-item"
+                    >
+                      <a
+                        href="/vlog-post/how-to-use-analytics-to-drive-marketing-decisions"
+                        class="blog-01-home-content-03 _02 w-inline-block"
+                        ><div class="blog-01-home-content-04 _02">
+                          <img
+                            src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b93092_Rectangle%2034624416.webp"
+                            loading="lazy"
+                            alt=""
+                            sizes="(max-width: 479px) 80vw, (max-width: 767px) 345px, (max-width: 991px) 45vw, (max-width: 1279px) 27vw, 345px"
+                            srcset="
+                              https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b93092_Rectangle%252034624416-p-500.webp 500w,
+                              https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b93092_Rectangle%2034624416.webp         690w
+                            "
+                            class="b-link-01-image"
+                          />
+                        </div>
+                        <div class="blog-01-home-content-05 _02">
+                          <div class="blog-02-content-01">
+                            <div class="b-tag _02">PRODUCT DEVELOPMENT</div>
+                          </div>
+                          <div class="blog-01-home-content-07">
+                            <div class="body-regular---01">
+                              HOW TO USE ANALYTICS TO DRIVE MARKETING DECISIONS
+                            </div>
+                          </div>
+                          <div class="blog-02-content-02">
+                            <div class="body-regular---02">May 15, 2024</div>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                    <div
+                      data-w-id="72e3a326-18a7-7783-2cc3-9a349bc9936a"
+                      style="
+                        opacity: 0;
+                        -webkit-transform: translate3d(0, 80px, 0)
+                          scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0)
+                          skew(0, 0);
+                        -moz-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                        -ms-transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                        transform: translate3d(0, 80px, 0) scale3d(1, 1, 1)
+                          rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+                      "
+                      role="listitem"
+                      class="w-dyn-item"
+                    >
+                      <a
+                        href="/vlog-post/the-importance-of-branding-in-modern-marketing"
+                        class="blog-01-home-content-03 _02 w-inline-block"
+                        ><div class="blog-01-home-content-04 _02">
+                          <img
+                            src="https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b93091_Rectangle%2034624415.webp"
+                            loading="lazy"
+                            alt=""
+                            sizes="(max-width: 479px) 80vw, (max-width: 767px) 345px, (max-width: 991px) 45vw, (max-width: 1279px) 27vw, 345px"
+                            srcset="
+                              https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b93091_Rectangle%252034624415-p-500.webp 500w,
+                              https://cdn.prod.website-files.com/667d12c4e9ccd7c563b9307e/667d12c4e9ccd7c563b93091_Rectangle%2034624415.webp         690w
+                            "
+                            class="b-link-01-image"
+                          />
+                        </div>
+                        <div class="blog-01-home-content-05 _02">
+                          <div class="blog-02-content-01">
+                            <div class="b-tag _02">PRODUCT DEVELOPMENT</div>
+                          </div>
+                          <div class="blog-01-home-content-07">
+                            <div class="body-regular---01">
+                              THE IMPORTANCE OF BRANDING IN MODERN MARKETING
+                            </div>
+                          </div>
+                          <div class="blog-02-content-02">
+                            <div class="body-regular---02">May 15, 2024</div>
+                          </div>
+                        </div></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </section>
     <section
